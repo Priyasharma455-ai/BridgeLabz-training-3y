@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #243b55;
+    color: white;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* Main Container */
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Three Equal Columns */
+.pricing {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* Pricing Card */
+.plan {
+    flex: 1;
+    min-height: 400px;
+    padding: 30px;
+
+    background-color: white;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Plan Heading */
+.plan h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Features List */
+.plan ul {
+    margin-left: 20px;
+    line-height: 2;
+}
+
+/* Price */
+.plan h3 {
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.plan a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Hover Effect */
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #eff6ff;
+}
+
+/* Most Popular Plan */
+.popular {
+    border: 3px solid #2563eb;
+}
+
+.popular-tag {
+    text-align: center;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .pricing {
+        flex-direction: column;
+    }
+}

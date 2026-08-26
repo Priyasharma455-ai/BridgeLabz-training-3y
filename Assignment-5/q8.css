@@ -1,0 +1,139 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main Dashboard Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: calc(100vh - 76px);
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #1e293b;
+    color: white;
+    padding: 30px 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 25px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #334155;
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px;
+}
+
+.main-content > h2 {
+    margin-bottom: 25px;
+}
+
+/* Dashboard Cards Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Individual Card */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Recent Activity */
+.recent {
+    margin-top: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.recent h2 {
+    margin-bottom: 15px;
+}
+
+.recent p {
+    margin-top: 10px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .dashboard-header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

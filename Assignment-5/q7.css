@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #243b55;
+    color: white;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Contact Form Container */
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Input Focus Effect */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Button */
+button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #243b55;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+}

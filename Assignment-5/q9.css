@@ -1,0 +1,116 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - Newspaper Typography */
+body {
+    font-family: Georgia, serif;
+    background-color: #f5f1e8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Newspaper Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid #222;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+header p {
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 25px;
+}
+
+/* Main Headline */
+.headline {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid #222;
+}
+
+.headline h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+/* Newspaper Articles Grid */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 25px;
+}
+
+.news-grid article {
+    padding: 25px;
+    border-bottom: 1px solid #888;
+}
+
+.news-grid article:nth-child(odd) {
+    border-right: 1px solid #888;
+}
+
+.news-grid h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #222;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-grid article:nth-child(odd) {
+        border-right: none;
+    }
+}

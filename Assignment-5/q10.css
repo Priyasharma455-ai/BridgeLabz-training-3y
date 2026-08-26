@@ -1,0 +1,261 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header - Sticky at Top */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: #243b55;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section - Background Image + Gradient */
+.hero {
+    min-height: 70vh;
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(36, 59, 85, 0.75), rgba(37, 99, 235, 0.65)),
+        url("images/priya.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Hero Text */
+.hero-content {
+    max-width: 750px;
+    color: white;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    outline: 2px solid rgba(255, 255, 255, 0.25);
+    outline-offset: 8px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* About Section - Two Columns */
+.about {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Absolute Positioned Label */
+.about-image::after {
+    content: "Creative Studio";
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px 15px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.services > h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Three Service Boxes */
+.service-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    padding: 30px 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Contact Section */
+.contact {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 12px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #243b55;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+}
