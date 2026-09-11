@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+.wrapper {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+/* MARGIN LAYER */
+.margin-layer {
+    padding: 35px;
+    background-color: #f8caca;
+    outline: 3px dashed red;
+}
+
+/* BORDER LAYER */
+.border-layer {
+    padding: 25px;
+    border: 15px solid #555;
+    background-color: #d5e8ff;
+}
+
+/* PADDING LAYER */
+.padding-layer {
+    padding: 30px;
+    background-color: #d5ffd5;
+}
+
+/* CONTENT LAYER */
+.content-layer {
+    padding: 30px;
+    background-color: #fff3a3;
+    text-align: center;
+}
+
+.layer-label {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CONTENT-BOX AND BORDER-BOX COMPARISON */
+.comparison {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.demo {
+    width: 250px;
+    padding: 30px;
+    border: 10px solid black;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Default box model */
+.content-box-demo {
+    box-sizing: content-box;
+}
+
+/* Border-box model */
+.border-box-demo {
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+}

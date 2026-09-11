@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 20px;
+    text-align: center;
+
+    background-color: #222;
+    color: white;
+
+    z-index: 10;
+}
+
+/* Main */
+main {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+/* Common section styling */
+.linear-section,
+.radial-section {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+/* Linear Gradient */
+.linear-section {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    /* Parallax-like effect */
+    background-attachment: fixed;
+}
+
+/* Radial Gradient */
+.radial-section {
+    background: radial-gradient(circle, #ff9966, #ff5e62);
+}
+
+/* Text */
+.content {
+    max-width: 600px;
+}
+
+.content h2 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Fixed Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 15px;
+    text-align: center;
+
+    background-color: #222;
+    color: white;
+
+    z-index: 10;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    .linear-section,
+    .radial-section {
+        min-height: 500px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}

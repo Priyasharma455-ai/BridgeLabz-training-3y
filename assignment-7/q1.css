@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+/* Main container using Flexbox */
+.container {
+    min-height: 70vh;
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    width: 180px;
+    min-height: 160px;
+    background-color: white;
+    text-align: center;
+
+    transition: border-color 0.3s ease;
+}
+
+/* Solid border */
+.solid {
+    border: 5px solid black;
+    padding: 20px;
+}
+
+/* Dashed border */
+.dashed {
+    border: 5px dashed black;
+    padding: 30px;
+}
+
+/* Double border */
+.double {
+    border: 8px double black;
+    padding: 15px;
+}
+
+/* Groove border */
+.groove {
+    border: 8px groove gray;
+    padding: 25px;
+}
+
+/* Rounded corners */
+.rounded {
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/* Hover effect */
+.box:hover {
+    border-color: blue;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+}

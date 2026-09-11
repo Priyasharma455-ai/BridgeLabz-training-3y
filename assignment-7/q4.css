@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+/* Cards arranged in a single row */
+.card-container {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Common card styling */
+.card {
+    width: 280px;
+    min-height: 220px;
+
+    padding: 30px;
+    text-align: center;
+
+    background-color: white;
+
+    transition: all 0.3s ease;
+}
+
+/* Different box shadows */
+.card-one {
+    box-shadow: 5px 5px 15px gray;
+}
+
+.card-two {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-three {
+    box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Text shadow */
+.card h2 {
+    text-shadow: 2px 2px 4px gray;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px gray;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    .card-container {
+        flex-direction: column;
+    }
+}

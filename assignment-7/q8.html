@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model Exploration</h1>
+    </header>
+
+    <main class="wrapper">
+
+        <div class="margin-layer">
+            <div class="layer-label">
+                Margin
+
+                <div class="border-layer">
+                    <div class="layer-label">
+                        Border
+
+                        <div class="padding-layer">
+                            <div class="layer-label">
+                                Padding
+
+                                <div class="content-layer">
+                                    <strong>Content</strong>
+                                    <p>This is the content area.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="comparison">
+
+            <div class="demo content-box-demo">
+                <h3>Default: content-box</h3>
+                <p>
+                    Width excludes padding and border.
+                </p>
+            </div>
+
+            <div class="demo border-box-demo">
+                <h3>border-box</h3>
+                <p>
+                    Width includes padding and border.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Box Model Practice</p>
+    </footer>
+
+</body>
+</html>
