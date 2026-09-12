@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.card {
+    width: 700px;
+    max-width: 100%;
+
+    padding: 35px;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 20px #bbb;
+}
+
+.card h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Search bar */
+
+.search-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+
+    border: 2px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.search-box button {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: blue;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: darkblue;
+}
+
+/* Buttons and dropdown */
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.action-btn {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: green;
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px #bbb;
+    transition: 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: darkgreen;
+    transform: translateY(-2px);
+}
+
+select {
+    padding: 12px;
+
+    border: 2px solid #ccc;
+    border-radius: 6px;
+
+    background-color: white;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 5px #aaa;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .options {
+        flex-direction: column;
+    }
+
+    .action-btn,
+    select {
+        width: 100%;
+    }
+}

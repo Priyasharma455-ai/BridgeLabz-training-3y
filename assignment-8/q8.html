@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+
+    <header>
+        <h1>Box-Sizing Comparison</h1>
+        <p>Understanding the Difference Between Box-Sizing Values</p>
+    </header>
+
+    <main class="container">
+
+        <section class="box default-box">
+            <h2>Default Box-Sizing</h2>
+
+            <div class="demo-box">
+                Default Box
+            </div>
+
+            <p>
+                The default box-sizing value is content-box.
+                Width and padding are added together, so the
+                total size becomes larger than the specified width.
+            </p>
+        </section>
+
+        <section class="box border-box">
+            <h2>Border-Box</h2>
+
+            <div class="demo-box">
+                Border Box
+            </div>
+
+            <p>
+                With border-box, the specified width includes
+                both padding and border. Therefore, the total
+                size remains within the given width.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Box-Sizing Practice</p>
+    </footer>
+
+</body>
+</html>

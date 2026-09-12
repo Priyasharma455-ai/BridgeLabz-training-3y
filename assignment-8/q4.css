@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Element selector
+   Styles all h2 elements */
+h2 {
+    color: #222;
+    margin-top: 25px;
+}
+
+/* Header styling */
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Class selector
+   Styles elements having class="highlight" */
+
+.highlight {
+    background-color: lightyellow;
+    padding: 12px;
+    border-left: 5px solid orange;
+}
+
+/* ID selector
+   Styles the element having id="special" */
+
+#special {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Attribute selector
+   Selects input elements having type="text" */
+
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 12px;
+
+    border: 2px solid #aaa;
+    border-radius: 6px;
+}
+
+/* Attribute selector
+   Selects links whose href starts with https */
+
+a[href^="https"] {
+    display: block;
+    margin-top: 15px;
+
+    color: green;
+    font-weight: bold;
+}
+
+/* List styling */
+
+.skills {
+    padding-left: 25px;
+}
+
+.skills li {
+    padding: 8px;
+    margin: 4px;
+}
+
+/* CHILD COMBINATOR >
+   Selects only direct p children of .parent */
+
+.parent > p {
+    color: purple;
+    font-weight: bold;
+}
+
+/* DESCENDANT COMBINATOR
+   Selects all p elements inside .parent */
+
+.parent p {
+    line-height: 1.8;
+}
+
+/* ADJACENT SIBLING COMBINATOR +
+   Selects the p immediately after .first-sibling */
+
+.first-sibling + p {
+    color: red;
+}
+
+/* GENERAL SIBLING COMBINATOR ~
+   Selects all p elements after .first-sibling */
+
+.first-sibling ~ p {
+    text-decoration: underline;
+}
+
+/* Main container */
+
+.container {
+    min-height: 70vh;
+
+    padding: 40px;
+}
+
+.selector-section {
+    max-width: 800px;
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px #ccc;
+}
+
+.selector-section p {
+    line-height: 1.6;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .selector-section {
+        padding: 20px;
+    }
+}

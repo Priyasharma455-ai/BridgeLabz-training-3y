@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+.container {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Common styling for all examples */
+.example {
+    width: 250px;
+    min-height: 300px;
+
+    padding: 25px;
+
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px #ccc;
+}
+
+.example h2 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   :hover PSEUDO-CLASS
+   ========================= */
+
+/* Changes link style when mouse is over it */
+.example a {
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    color: blue;
+    text-decoration: none;
+}
+
+.example a:hover {
+    color: white;
+    background-color: blue;
+}
+
+
+/* =========================
+   :focus PSEUDO-CLASS
+   ========================= */
+
+/* Changes input when it receives focus */
+.example input {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 2px solid #aaa;
+    border-radius: 5px;
+}
+
+.example input:focus {
+    border-color: green;
+    outline: none;
+    background-color: #eaffea;
+}
+
+
+/* =========================
+   :active PSEUDO-CLASS
+   ========================= */
+
+/* Changes button while it is being clicked */
+.example button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #444;
+    color: white;
+
+    cursor: pointer;
+}
+
+.example button:active {
+    background-color: red;
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   :nth-child() PSEUDO-CLASS
+   ========================= */
+
+/* Selects the second list item */
+.example li:nth-child(2) {
+    color: blue;
+    font-weight: bold;
+    background-color: #e0f0ff;
+}
+
+
+/* List styling */
+.example ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.example li {
+    padding: 8px;
+    margin: 5px;
+}
+
+
+/* Explanation text */
+.example p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .example {
+        width: 90%;
+    }
+}

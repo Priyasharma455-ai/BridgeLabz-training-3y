@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+.animation-container {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.animation-box {
+    width: 180px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #222;
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+/* Moving animation */
+
+.move {
+    background-color: lightblue;
+
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-40px);
+    }
+
+    to {
+        transform: translateX(40px);
+    }
+}
+
+/* Bouncing animation */
+
+.bounce {
+    background-color: lightgreen;
+
+    animation-name: bounceBox;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bounceBox {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(30px);
+    }
+}
+
+/* Color changing animation */
+
+.color-change {
+    background-color: lightcoral;
+
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changeColor {
+    from {
+        background-color: lightcoral;
+    }
+
+    to {
+        background-color: lightyellow;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .animation-container {
+        flex-direction: column;
+    }
+}
