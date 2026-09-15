@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Main Section */
+.principles {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.principles h1 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+/* Grid Layout */
+.principle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Principle Boxes */
+.principle-box {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    transition: background 0.4s ease,
+                color 0.4s ease,
+                transform 0.4s ease;
+}
+
+.principle-box h2 {
+    margin-bottom: 15px;
+}
+
+.principle-box p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* CSS Example */
+code {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.principle-box:hover {
+    background: linear-gradient(135deg, #222, #555);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.principle-box:hover code {
+    color: #222;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+
+    .principle-container {
+        grid-template-columns: 1fr;
+    }
+
+    .principles {
+        padding: 35px 20px;
+    }
+
+    .principles h1 {
+        font-size: 30px;
+    }
+}

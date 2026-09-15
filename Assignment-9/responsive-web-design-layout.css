@@ -1,0 +1,216 @@
+/* =========================
+   BASIC RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    display: flex;
+
+    /* Logo on left and navigation on right */
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 35px;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Logo Image */
+.logo img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* Logo Text */
+.logo h1 {
+    font-size: 28px;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* Navigation Links */
+.navigation a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Navigation Hover */
+.navigation a:hover {
+    color: #cccccc;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    flex: 1;
+}
+
+
+/* =========================
+   FEATURE SECTION
+   ========================= */
+
+.features {
+    display: flex;
+
+    /* Three boxes horizontally */
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    padding: 50px 30px;
+}
+
+
+/* =========================
+   FEATURE BOX
+   ========================= */
+
+.feature-box {
+    flex: 1;
+
+    padding: 30px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    /* Smooth hover transition */
+    transition: transform 0.3s ease;
+}
+
+
+/* Feature Box Heading */
+.feature-box h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Feature Box Paragraph */
+.feature-box p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HOVER EFFECT
+   ========================= */
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   BELOW 750px
+   ========================= */
+
+@media (max-width: 750px) {
+
+    /* Header becomes vertical */
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Navigation remains horizontal */
+    .navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Feature boxes stack vertically */
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+}

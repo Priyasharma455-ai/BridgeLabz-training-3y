@@ -1,0 +1,105 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Gallery
+   Requirement:
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual image card */
+.gallery-card {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Images */
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    /* Smooth filter removal */
+    transition: filter 0.5s ease;
+}
+
+/* 1. Blur */
+.blur {
+    filter: blur(3px);
+}
+
+/* 2. Grayscale */
+.grayscale {
+    filter: grayscale(100%);
+}
+
+/* 3. Sepia */
+.sepia {
+    filter: sepia(100%);
+}
+
+/* 4. Brightness */
+.brightness {
+    filter: brightness(150%);
+}
+
+/* 5. Contrast */
+.contrast {
+    filter: contrast(180%);
+}
+
+/* 6. Hue Rotate */
+.hue-rotate {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove filter on hover */
+.gallery-card img:hover {
+    filter: none;
+}
+
+/* Caption */
+.gallery-card figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 
+   Below 600px:
+   All images will be displayed
+   in a single column.
+*/
+@media (max-width: 600px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}

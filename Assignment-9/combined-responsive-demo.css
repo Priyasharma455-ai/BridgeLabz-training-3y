@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background-color: #222;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+
+/* Navigation */
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #ccc;
+}
+
+
+/* Main Grid */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+    padding: 40px 30px;
+
+    animation: fade-in 1s ease;
+}
+
+
+/* Main Sections */
+.demo-section {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.demo-section:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.demo-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsive Design Section */
+.demo-section p {
+    line-height: 1.6;
+}
+
+.example {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #eee;
+
+    border-radius: 6px;
+}
+
+code {
+    margin-left: 8px;
+}
+
+
+/* Cheat Sheet */
+.cheat-sheet {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cheat-sheet div {
+    padding: 15px;
+
+    background-color: #eee;
+
+    border-radius: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+.cheat-sheet div:hover {
+    transform: scale(1.03);
+}
+
+.cheat-sheet h3 {
+    margin-bottom: 8px;
+}
+
+
+/* Fade-in Animation */
+@keyframes fade-in {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+    }
+
+}

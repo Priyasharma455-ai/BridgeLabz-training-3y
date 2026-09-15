@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.comparison {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.comparison h1 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+/* Two images side-by-side */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+/* Image boxes */
+.image-box {
+    width: 45%;
+    max-width: 500px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    transition: filter 0.5s ease;
+}
+
+/* Filter applied to second image */
+.filtered img {
+    filter: brightness(60%) contrast(130%);
+}
+
+/* Remove filter on hover */
+.filtered img:hover {
+    filter: brightness(100%) contrast(100%);
+}
+
+/* Captions */
+figcaption {
+    padding: 15px 5px 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        width: 90%;
+    }
+
+    .image-box img {
+        height: 300px;
+    }
+}

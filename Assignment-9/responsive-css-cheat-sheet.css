@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Main Section */
+.cheat-sheet {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.cheat-sheet h1 {
+    margin-bottom: 35px;
+    font-size: 36px;
+}
+
+/* CSS Grid */
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Topic Box */
+.topic {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Topic Heading */
+.topic h2 {
+    font-size: 22px;
+}
+
+/* Description */
+.content {
+    text-align: left;
+}
+
+.content p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Example */
+code {
+    background-color: #eeeeee;
+    padding: 6px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Hover Effect */
+.topic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Below 700px */
+@media (max-width: 700px) {
+
+    .topics {
+        grid-template-columns: 1fr;
+    }
+
+    .topic {
+        grid-template-columns: 1fr;
+        text-align: left;
+        gap: 15px;
+    }
+
+    .topic h2 {
+        text-align: left;
+    }
+
+    .cheat-sheet {
+        padding: 35px 20px;
+    }
+}

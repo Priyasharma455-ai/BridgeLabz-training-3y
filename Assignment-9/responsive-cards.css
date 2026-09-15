@@ -1,0 +1,117 @@
+/* =========================
+   BASIC RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* =========================
+   CARDS CONTAINER
+   ========================= */
+
+.cards {
+    display: flex;
+
+    /* Cards in a row */
+    flex-direction: row;
+
+    /* Allow cards to move to next row */
+    flex-wrap: wrap;
+
+    /* Equal spacing between cards */
+    gap: 20px;
+
+    padding: 40px;
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    /* Desktop: 4 columns */
+    flex: 1 1 calc(25% - 20px);
+
+    padding: 30px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    /* Smooth background transition */
+    transition: background-color 0.3s ease;
+}
+
+
+/* Card Heading */
+.card h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Card Paragraph */
+.card p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HOVER EFFECT
+   ========================= */
+
+.card:hover {
+    background-color: #dceeff;
+}
+
+
+/* =========================
+   TABLET
+   MAX-WIDTH: 900px
+   ========================= */
+
+@media (max-width: 900px) {
+
+    /* 2 columns */
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+
+/* =========================
+   MOBILE
+   MAX-WIDTH: 600px
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* 1 column */
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+}
