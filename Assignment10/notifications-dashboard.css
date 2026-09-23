@@ -1,0 +1,39 @@
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Notification card */
+.card {
+    border: none;
+}
+
+/* Summary section */
+.summary-well {
+    transition: box-shadow 0.3s ease;
+}
+
+/* Summary item hover effect */
+.summary-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile adjustment */
+@media (max-width: 576px) {
+
+    header .d-flex {
+        align-items: flex-start !important;
+        gap: 15px;
+    }
+
+    .summary-well {
+        padding: 20px !important;
+    }
+}
+```

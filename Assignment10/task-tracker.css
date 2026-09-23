@@ -1,0 +1,32 @@
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Task item transition */
+.task-item {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Task hover effect */
+.task-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(4px);
+}
+
+/* Mobile layout */
+@media (max-width: 576px) {
+
+    header .d-flex {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .task-item .d-flex {
+        align-items: flex-start !important;
+        gap: 15px;
+    }
+}
+```

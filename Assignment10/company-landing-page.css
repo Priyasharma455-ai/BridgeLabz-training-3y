@@ -1,0 +1,57 @@
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Hero section */
+.hero-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Bootstrap min-vh-75 helper */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Hero information card */
+.hero-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+}
+
+/* Services section */
+.services-section {
+    background: #f8f9fa;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobile screen adjustment */
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 40px 0;
+    }
+
+    .hero-card {
+        padding: 25px;
+    }
+
+    .display-4 {
+        font-size: 2.3rem;
+    }
+}
+```

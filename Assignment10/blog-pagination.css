@@ -1,0 +1,24 @@
+/* Blog article styling */
+article {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 25px;
+}
+
+/* Article heading */
+article h2 {
+    margin-bottom: 15px;
+}
+
+/* Pagination spacing */
+.pagination {
+    margin-top: 40px;
+}
+
+/* Pager buttons transition */
+.btn-outline-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    transform: translateY(-2px);
+}

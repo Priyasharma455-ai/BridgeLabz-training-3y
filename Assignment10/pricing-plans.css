@@ -1,0 +1,24 @@
+/* Pricing card transition */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+/* Hover effect */
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--bs-box-shadow-lg) !important;
+}
+
+/* Pricing list spacing */
+.pricing-card ul {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/* Responsive spacing */
+@media (max-width: 767px) {
+    .pricing-card {
+        margin-bottom: 10px;
+    }
+}

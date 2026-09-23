@@ -1,0 +1,29 @@
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+}
+
+/* Food image */
+.food-image {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Table styling */
+.table {
+    background-color: white;
+}
+
+/* List group hover effect */
+.list-group-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-group-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+```

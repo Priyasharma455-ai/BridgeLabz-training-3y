@@ -1,0 +1,29 @@
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Product images */
+.product-image {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Product card hover transition */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect required in the assignment */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Product price */
+.price {
+    font-size: 1.2rem;
+}
+```

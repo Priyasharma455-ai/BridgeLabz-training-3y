@@ -1,0 +1,23 @@
+/* Carousel image styling */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Carousel rounded corners */
+.carousel {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Progress bar height */
+.progress {
+    height: 30px;
+}
+
+/* Responsive carousel height */
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}

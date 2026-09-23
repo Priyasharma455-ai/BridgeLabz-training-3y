@@ -1,0 +1,30 @@
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Profile image */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Skill cards hover effect */
+.bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-white:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive profile image */
+@media (max-width: 576px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+```

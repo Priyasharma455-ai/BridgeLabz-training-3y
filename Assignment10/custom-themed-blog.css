@@ -1,0 +1,85 @@
+```css
+/* Bootstrap theme variable overrides */
+:root {
+    --bs-primary: #6f42c1;
+    --bs-font-sans-serif: "Poppins", sans-serif;
+}
+
+/* Apply custom font */
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #f8f7fc;
+}
+
+/* Custom themed header */
+.blog-header {
+    background-color: var(--bs-primary);
+}
+
+/* Custom theme text */
+.theme-text {
+    color: var(--bs-primary);
+}
+
+/* Blog introduction */
+.blog-intro {
+    background-color: #ffffff;
+}
+
+/* Blog cards */
+.blog-card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Blog images */
+.blog-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Custom badge */
+.theme-badge {
+    background-color: var(--bs-primary);
+}
+
+/* About section */
+.about-section {
+    background-color: #ffffff;
+}
+
+/* Footer */
+.blog-footer {
+    background-color: var(--bs-primary);
+}
+
+/* Custom button theme */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+/* Button hover */
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+
+    .blog-card img {
+        height: 200px;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+}
+```
