@@ -1,0 +1,2 @@
+// Apply the selected theme using setAttribute().
+document.querySelectorAll("button[data-choice]").forEach(button=>button.addEventListener("click",()=>{const theme=button.getAttribute("data-choice");document.body.setAttribute("data-theme",theme);document.body.setAttribute("data-current-theme",theme);document.querySelector("#status").textContent=`Current theme: ${theme[0].toUpperCase()+theme.slice(1)}`;}));
