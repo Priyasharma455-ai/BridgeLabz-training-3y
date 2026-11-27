@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Aarav"
+    },
+    {
+      "id": 2,
+      "name": "Diya"
+    },
+    {
+      "id": 3,
+      "name": "Kabir"
+    },
+    {
+      "id": 4,
+      "name": "Meera"
+    },
+    {
+      "id": 5,
+      "name": "Rohan"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "item": "Keyboard",
+      "total": 2499
+    },
+    {
+      "id": 2,
+      "item": "Mouse",
+      "total": 899
+    },
+    {
+      "id": 3,
+      "item": "Headphones",
+      "total": 1499
+    },
+    {
+      "id": 4,
+      "item": "USB Hub",
+      "total": 1599
+    },
+    {
+      "id": 5,
+      "item": "Laptop Stand",
+      "total": 1199
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Keyboard",
+      "price": 2499
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 899
+    },
+    {
+      "id": 3,
+      "name": "Headphones",
+      "price": 1499
+    },
+    {
+      "id": 4,
+      "name": "USB Hub",
+      "price": 1599
+    },
+    {
+      "id": 5,
+      "name": "Laptop Stand",
+      "price": 1199
+    }
+  ]
+}
